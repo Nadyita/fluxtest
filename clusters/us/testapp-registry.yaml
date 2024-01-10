@@ -1,0 +1,9 @@
+---
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImageRepository
+metadata:
+  name: testapp
+  namespace: flux-system
+spec:
+  image: quay.io/nadyita/testapp
+  interval: 5m0s
