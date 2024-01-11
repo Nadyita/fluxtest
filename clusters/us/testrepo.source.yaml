@@ -8,6 +8,6 @@ spec:
   interval: 1m0s
   ref:
     branch: main
-  url: ssh://github.com/Nadyita/testproject.git
+  url: ssh://git@github.com/Nadyita/testproject.git
   secretRef:
     name: github-auth
