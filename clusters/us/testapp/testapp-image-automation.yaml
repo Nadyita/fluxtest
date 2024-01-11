@@ -2,7 +2,7 @@
 apiVersion: image.toolkit.fluxcd.io/v1beta1
 kind: ImageUpdateAutomation
 metadata:
-  name: flux-system
+  name: testapp
   namespace: flux-system
 spec:
   git:
@@ -19,7 +19,7 @@ spec:
   interval: 30m0s
   sourceRef:
     kind: GitRepository
-    name: testapp
+    name: testrepo
   update:
-    path: ./app
+    path: ./app1
     strategy: Setters
