@@ -9,3 +9,5 @@ spec:
   ref:
     branch: main
   url: ssh://github.com/Nadyita/testproject.git
+  secretRef:
+    name: github-auth
