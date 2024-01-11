@@ -16,10 +16,9 @@ spec:
       messageTemplate: '{{range .Updated.Images}}{{println .}}{{end}}'
     push:
       branch: main
-  interval: 30m0s
+  interval: 3m0s
   sourceRef:
     kind: GitRepository
     name: testrepo
   update:
-    path: ./app1
     strategy: Setters
